@@ -38,7 +38,7 @@ var chart = d3.select(".chart")
     .attr("transform",
     "translate(" + margin.left + "," + margin.top + ")");
 
-// implements tooltip
+// implements tooltip inspired by: http://bl.ocks.org/Caged/6476579
 var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-10, 0])
