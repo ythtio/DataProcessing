@@ -1,0 +1,36 @@
+/*
+ * scatterplot.css
+ *
+ * Minor programmeren
+ * Yol Tio 10753222
+ *
+ * States style factors for scatterplot showing the ratio of UEFA-points vs. population
+ * of the top 100 soccer nations. Size of the dots shows the number of qualifications 
+ * for the FIFA World Cup for a certain country.
+*/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: geometricPrecision
+;
+}
+
+.dot {
+  stroke: #000;
+}
+
+/*based on: http://bl.ocks.org/d3noob/a22c42db65eb00d4e369*/
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: auto;          
+    height: auto;         
+    padding: 4px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
