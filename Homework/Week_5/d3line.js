@@ -32,7 +32,7 @@ var x = d3.scaleTime()
 var y = d3.scaleLinear()
     .range([height, 0]);
 
-// // function to scale colours
+// function to scale colours
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 // create line for different temperatures
@@ -70,7 +70,7 @@ d3.json("janTemp.json", function(error, data) {
     d3.max(data, function(d) {
     return Math.max(d.Temp)}) ]);
 
-// Sorts Temperatures
+// sorts Temperatures
 var dataNest = d3.nest()
     .key(function(d) {return d.TempSort;})
     .entries(data);
@@ -78,7 +78,7 @@ var dataNest = d3.nest()
 // creates space for Legend
 legendSpace = width/dataNest.length;
 
-// Creates paths and legends
+// creates paths and legends
 dataNest.forEach(function(d,i) { 
     
     chart.append("path")
