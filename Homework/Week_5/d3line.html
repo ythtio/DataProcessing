@@ -1,0 +1,34 @@
+<!--
+d3line.html
+
+Yol Tio 10753222
+Minor Programmeren
+
+The HTML file contains a multiline graph showing the daily maximum, minimum and average temperature at Schiphol Airport
+-->
+<!DOCTYPE html>
+<html>
+<svg width="1200" height="500"></svg>
+<head>
+	<title>Multiline Graph</title>
+	<script src="d3.js" charset="utf-8"></script>
+	<script type="text/javascript" src="d3line.js"></script>
+</head>
+<body>
+<a>Yol Tio 10753222</a><br>
+	<style>
+		.axis--x path {
+		  display: none;
+		}
+		.line {
+		  fill: none;
+		  stroke-width: 1.5px;
+		}
+	</style>
+    <div id="MonthList" class="Months">
+      <button class="m" value="1" href="#">January 2017</button>
+      <br>
+      <button class="m" value="2" href="#">February 2017</button>
+    </div>
+</body>
+</html>
