@@ -1,0 +1,57 @@
+body.btn-primary {
+        background-color: #ffffff;
+        border-color: #000000;
+    color: #000000;
+    }
+
+    /* provides style for text*/
+    .chart text {
+        fill: black;
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+
+    /* provides style for header*/
+    .header {
+        fill: black;
+        text-anchor: middle;
+        font: 30px sans-serif;
+    }
+
+    /* provides style for axes*/
+    .axis text {
+        font: 16px sans-serif;
+        text-anchor: end;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: black;
+    }
+
+    /* gives colour to bar, also for when hovered over*/
+    .bar {
+        fill: darkred;
+    }
+
+    .bar:hover {
+        fill: red;
+    }
+
+    /* provides style properties for tooltip*/
+    .d3-tip {
+        font-weight: bold;
+        font: 12px sans-serif;
+        text-align: center;
+        fill: black;
+        padding: 4px;
+        background: lavender;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .country {
+        fill: darkred;
+    }

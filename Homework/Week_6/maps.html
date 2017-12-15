@@ -1,0 +1,51 @@
+<!--
+maps.html
+
+Yol Tio 10753222
+Minor Programmeren
+
+The map shows Europe with the Crime Index (obtained at // https://www.numbeo.com/crime/rankings_by_country.jsp?title=2017-mid&region=150) as the colour gradient of countries. It is linked to a barchart that shows the amount of homocides per 100.000 people. (obtained at https://en.wikipedia.org/wiki/list_of_countries_by_intentional_homicide_rate)
+Button tutorial: https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
+ -->
+
+<!DOCTYPE html>
+<html>
+<div class="bootstrap"></div>
+
+<head>
+    <title>Linked views</title>
+    <link rel="stylesheet" href="Style/maps.css">
+    <script src="Scripts/Lib/d3.js" charset="utf-8"></script>
+    <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="//d3js.org/d3-queue.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Scripts/maps.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Story" data-title="Story">Story</button>
+        <div id="Story" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Story</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Every year thousands of (innocent) people are victim of intentional homocide, this interactive datavisualisation shows the homocides per 100.000 inhabitants per country. <br> While the countries in the map on the left show the countries Crime Index. The Crime Index is an estimation of the overall level of crime in a country on a scale of 0 to 100. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div><br>Yol Tio 10753222</div>
+</body>
+
+</html>
